@@ -1,0 +1,150 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html,
+ body {
+     width: 100%;
+     height: 100%;
+ }
+
+ .line1 {
+     width: 100%;
+     height: 5%;
+     background-color: azure;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .line1 a {
+     padding-left: 30px;
+     font-size: 15px;
+     color: black;
+     font-weight: 600;
+ }
+
+ .part1 {
+     width: 100%;
+     height: 100%;
+ }
+
+ .carousel-item {
+     width: 100%;
+     height: 100%;
+
+ }
+
+ .perfume {
+
+     width: 500px;
+     height: 700px;
+
+ }
+
+
+ .page2part1 {
+     width: 100%;
+     height: 15%;
+     /* background-color: aliceblue; */
+ }
+
+ .page2part2 {
+     width: 100%;
+     height: 60%;
+     background-color: antiquewhite;
+ }
+
+ .shoes {
+     background-color: aquamarine;
+     width: 25%;
+     height: 100%;
+     position: relative;
+     overflow: hidden;
+     z-index: 1;
+     margin-left: 10px;
+     border-radius: 10px;
+ }
+
+
+
+ .shoes::after {
+     content: '';
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background: #e5e5e5;
+     opacity: 0;
+     transition: .5s ease all;
+ }
+
+ .shoes1 {
+
+     width: 100%;
+     height: 100%;
+     border-radius: 10px;
+     transition: .5s ease all;
+     width: 100%;
+     object-fit: cover;
+
+
+ }
+
+ .shoes:hover .shoes1 {
+     transform: scale(1.1);
+     display: initial;
+
+ }
+
+ .shoes:hover h1 {
+     display: initial;
+ }
+
+ .shoes:hover::after {
+     opacity: 0.2;
+ }
+
+ .page2part3 {
+     margin-top: 10px;
+     width: 100%;
+     height: 15%;
+ }
+
+ .detailss {
+     width: 25%;
+     height: 100%;
+ }
+
+ .page3 {
+
+     display: flex;
+     width: 100%;
+     height: 100%;
+     /* background-color: antiquewhite; */
+ }
+
+ .page3part1 {
+
+     margin-left: 20px;
+     width: 40%;
+     height: 70%;
+     background-image: url(https://img.freepik.com/premium-vector/online-shopping-system_2849-61.jpg?w=740);
+     background-position: center;
+     background-size: contain;
+     background-repeat: no-repeat;
+
+ }
+
+ .page3part2 {
+     margin-right: 20px;
+     color: black;
+     width: 63%;
+     height: 70%;
+     padding: 20px;
+     padding-left: 40px;
+     background-color: #7D7D7D;
+ }
